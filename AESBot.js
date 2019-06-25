@@ -208,6 +208,9 @@ var dict = {
     "1040098197-359498587-2263556736-336719112": "pakchunk1008-WindowsClient.pak",
     "1102948689-76138561-3275090938-1579367664": "pakchunk1009-WindowsClient.pak",
     "1300851603-3696962840-2854832618-2070394090": "pakchunk1010-WindowsClient.pak",
+    "1435256579-1146701242-28877991-4121881694": "pakchunk1011-WindowsClient.pak",
+    "1525535963-1571000433-4244382724-4004761645": "pakchunk1012-WindowsClient.pak",
+    "1525535963-1571000433-4244382724-4004761645": "pakchunk1012-WindowsClient.pak",
 };
 function splitGUID(input, len) {
     return input.match(new RegExp('.{1,' + len + '}(?=(.{' + len + '})+(?!.))|.{1,' + len + '}$', 'g'))
