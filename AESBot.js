@@ -109,7 +109,7 @@ function processCommand(receivedMessage) {
     console.log("Arguments: " + firstArguments + " " + fullArg) // There may not be any arguments
 
     if (primaryCommand == "aes") {
-        receivedMessage.channel.send(receivedMessage.author + " " + process.env.sAESKEY)
+        receivedMessage.channel.send(process.env.sAESKEY)
     }
     else if (primaryCommand == "faes")
     {
@@ -210,7 +210,21 @@ var dict = {
     "1300851603-3696962840-2854832618-2070394090": "pakchunk1010-WindowsClient.pak",
     "1435256579-1146701242-28877991-4121881694": "pakchunk1011-WindowsClient.pak",
     "1525535963-1571000433-4244382724-4004761645": "pakchunk1012-WindowsClient.pak",
-    "1525535963-1571000433-4244382724-4004761645": "pakchunk1012-WindowsClient.pak",
+    "1796020128-1334029041-3840679181-1209891587": "pakchunk1013-WindowsClient.pak",
+    "1842804084-3128343915-1759596529-2441212598": "pakchunk1014-WindowsClient.pak",
+    "2124309830-2831618206-2573662656-282563751": "pakchunk1015-WindowsClient.pak",
+    "2187763546-798715965-443279931-3415354749": "pakchunk1016-WindowsClient.pak",
+    "2447254115-980494-108987589-1347486912": "pakchunk1017-WindowsClient.pak",
+    "2786266944-2008623316-489260131-3323727668": "pakchunk1018-WindowsClient.pak",
+    "2793757545-2682327013-50442209-2767877323": "pakchunk1019-WindowsClient.pak",
+    "2864264401-2046069176-139374679-52082757": "pakchunk1020-WindowsClient.pak",
+    "3099687673-3155030801-986104984-3744671170": "pakchunk1021-WindowsClient.pak",
+    "3139842090-2208478242-686778995-509182816": "pakchunk1022-WindowsClient.pak",
+    "3222666102-2850525480-631634378-1768364385": "pakchunk1023-WindowsClient.pak",
+    "3630038017-368852085-2796395613-363912180": "pakchunk1024-WindowsClient.pak",
+    "3837887408-4013010416-1643214086-2152093326": "pakchunk1025-WindowsClient.pak",
+    "3954655847-2620705236-3763774954-2918393273": "pakchunk1026-WindowsClient.pak",
+    "3993790296-259474726-3563742325-2136860542": "pakchunk1027-WindowsClient.pak",
 };
 function splitGUID(input, len) {
     return input.match(new RegExp('.{1,' + len + '}(?=(.{' + len + '})+(?!.))|.{1,' + len + '}$', 'g'))
