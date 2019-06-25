@@ -113,7 +113,7 @@ function processCommand(receivedMessage) {
     }
     else if (primaryCommand == "faes")
     {
-        if (receivedMessage.member.roles.some(role => role.name === 'Master'))
+        if (receivedMessage.member.roles.some(role => role.name === 'Admin'))
         {
             receivedMessage.delete();
             try {
@@ -155,7 +155,7 @@ function processCommand(receivedMessage) {
     else if (primaryCommand == "ann")
     {
         receivedMessage.delete();
-        if (receivedMessage.member.roles.some(role => role.name === 'Moderator'))
+        if (receivedMessage.member.roles.some(role => role.name === 'Owner'))
         {
             try {
                 announcements(firstArguments, otherArguments);
@@ -197,16 +197,17 @@ function help(receivedMessage)
 
 //FORTNITE LATEST PAKS GUID
 var dict = {
-    "17722063-2246354315-4143272431-3887619937": "pakchunk1000-WindowsClient.pak",
-    "502546022-2019733783-4146814777-3880813882": "pakchunk1001-WindowsClient.pak",
-    "903718557-2884755032-640977468-3440246366": "pakchunk1002-WindowsClient.pak",
-    "1395786380-3275528383-1954475906-2956479884": "pakchunk1003-WindowsClient.pak",
-    "1425906365-1703384146-3703098897-3252154799": "pakchunk1004-WindowsClient.pak",
-    "1435256579-1146701242-28877991-4121881694": "pakchunk1005-WindowsClient.pak",
-    "2870001905-3382598254-1313305344-4225094000": "pakchunk1006-WindowsClient.pak",
-    "2890023433-3752547632-1352118789-236380905": "pakchunk1007-WindowsClient.pak",
-    "3422495642-395506265-551052274-590777172": "pakchunk1008-WindowsClient.pak",
-    "4174775494-4203828980-1935062350-507783831": "pakchunk1009-WindowsClient.pak",
+    "1805530-3896011467-1576937210-1505823552": "pakchunk1000-WindowsClient.pak",
+    "66839122-673427790-1003577787-3450751621": "pakchunk1001-WindowsClient.pak",
+    "424950230-3708806218-3672555386-1145267481": "pakchunk1002-WindowsClient.pak",
+    "554116831-2647488685-2511655943-3587773819": "pakchunk1003-WindowsClient.pak",
+    "668357999-2003512282-2545189057-337501642": "pakchunk1004-WindowsClient.pak",
+    "791151868-2177524623-3286232671-3106052219": "pakchunk1005-WindowsClient.pak",
+    "822913669-587245805-729052494-4029138979": "pakchunk1006-WindowsClient.pak",
+    "985825767-2783617654-1560150700-2561691592": "pakchunk1007-WindowsClient.pak",
+    "1040098197-359498587-2263556736-336719112": "pakchunk1008-WindowsClient.pak",
+    "1102948689-76138561-3275090938-1579367664": "pakchunk1009-WindowsClient.pak",
+    "1300851603-3696962840-2854832618-2070394090": "pakchunk1010-WindowsClient.pak",
 };
 function splitGUID(input, len) {
     return input.match(new RegExp('.{1,' + len + '}(?=(.{' + len + '})+(?!.))|.{1,' + len + '}$', 'g'))
